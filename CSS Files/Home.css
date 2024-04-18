@@ -1,3 +1,7 @@
+@media only screen and (max-width:414px){
+.phone{
+	visibility: collapse;
+}
 body {
 	font-family: Tahoma, sans-serif;
 	margin: 0;
