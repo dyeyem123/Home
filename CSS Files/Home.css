@@ -86,17 +86,6 @@ body {
 .sidenav {padding-top: 15px;}
 .sidenav a {font-size: 16px;}
 	}
-@media screen and (max-height: 320px) {
-#background-text h2 {
-	position: absolute;
-  	top: 50%;
-   	left: 50%;
-   	transform: translate(-50%, -50%);
-  	color: white;
-   	font-size: 1em;
-   	text-align: center;
-	font-family: Imprint MT Shadow;
-	}}
 			/*Menu Bar Button - Javascript*/	
 .open-menu-btn{
 	color: saddlebrown;
