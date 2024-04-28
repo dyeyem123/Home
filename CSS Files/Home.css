@@ -82,23 +82,17 @@ body {
 	font-size: 36px;
 	margin-left: 50px;
 	}
-@media screen and (max-height: 450px) {
+@media screen and (max-height: 320px) {
 .sidenav {padding-top: 15px;}
 .sidenav a {font-size: 16px;}
-#background-text a {
-   	position: absolute;
-	top: 80%;
-	right: 250px;
-	transform: translate(-50%, -50%);
-	color: white;
-	font-size: .5em;
-	text-align: center;
-	padding: 20px;
-	border: 2px solid white;
-	border-radius: 10px;
-	color: white;
-	text-decoration: none;
-	transition: color 0.3s ease;
+	#background-text h2 {
+	position: absolute;
+  	top: 50%;
+   	left: 50%;
+   	transform: translate(-50%, -50%);
+  	color: white;
+   	font-size: 1em;
+   	text-align: center;
 	font-family: Imprint MT Shadow;
 	}
 	}
