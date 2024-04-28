@@ -4,7 +4,7 @@ function validateLogin() {
 
         // Add your authentication logic here
         if (username === "dyey_em"&& password === "123") {
-        window.location.href = "Store.html";
+        window.location.href = "Home.html";
         } else {
         alert("Invalid username or password. Please try again.");
         }
