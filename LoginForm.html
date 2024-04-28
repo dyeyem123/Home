@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="CSS Files/Login.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Log in - JM's Coffee Shop</title>
+		<link rel="icon" type="image/x-icon" href="Images/jmshop.png">	
+		<script src="Javascript Files/Login.js" defer></script>
+		
+	</head>
+	<body>
+		<img src="Images/Background.jpg" id="background-image"> 
+		<form id="loginForm" onsubmit="event.preventDefault(); validateLogin()">
+			<img src="Images/Logoko.png" alt="Logo" id="Logo">
+			<label for="username" style="font-size: 1.5em; font-family:sanserif;">Username:</label>
+			<input type="text" id="username" class="inputbox" name="username" required><br>	
+			<label for="password" style="font-size: 1.5em; font-family:sanserif;">Password:</label>
+			<input type="password" id="password" class="inputbox" name="password" required><br>
+			<input type="submit" value="Login">
+			<input type="button" value="Reset"
+			onclick="resetForm()">
+		</form>
+	</body>
+</html>
