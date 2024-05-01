@@ -356,6 +356,7 @@ figcaption {
 .fa-youtube {
 	background: red;
 	color: white;
+	font-size: 25px;
 	}
 /* Instagram */
 .fa-instagram {
@@ -373,3 +374,137 @@ figcaption {
 	color: white;
 	}
 
+/*Selpon*/
+@media only screen and (max-width:414px){
+#background-image{
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;		
+	height: auto;
+	width:200%;
+	color:white;
+	display: flex;
+	text-align: center;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	filter: brightness(50%);
+	}	
+#background-image {
+	position: relative;
+	}
+
+	#background-text{
+		font-size: .5em;
+	}
+	#background-text a {
+		display:none;
+	}
+	.open-menu-btn{
+	color: saddlebrown;
+	font-size: 1.9em;
+	cursor: pointer;
+	position: absolute;
+	top: 5px;
+	left: 15px;
+	}
+	.shopping-cart {
+	position: absolute;
+	top: 25px;
+	right: 30px;
+	transform: translateY(-50%);
+	font-size: 25px;
+	cursor: pointer;
+	}
+	#logo{
+	display: none;
+  }
+.navigation {
+	top:0;
+	font-size: 0px;
+  position: relative;
+}
+main {
+	display: flex;
+	justify-content: space-between;
+	padding: 20px;
+	flex-wrap: wrap;
+	}
+article {
+	font-size: 1.1em;
+	text-align: justify;
+	position: relative;
+	}
+section {	
+	font-size: 1.1em;
+	text-align: justify;
+	position: relative;
+	}  
+aside {
+	font-size: 1.1em;
+	text-align: justify;
+	position: relative;
+	}
+#Craft-roasted{
+	font-size: 1.1em;
+	}
+#espresso{
+	width: 270px;
+	height: 270px;
+	position: relative;
+	top: -10px;
+	right: 10px;
+	}
+#cappuccino{
+	width: 270px;
+	height: 270px;
+	position: relative;
+	top: -10px;
+	right: 10px;	
+	}
+#latte{
+	width: 270px;
+	height: 270px;
+	position: relative;
+	top: -10px;
+	left: -10px;
+	}
+figure {
+		text-align: center;
+		}
+#h2 {
+	font-size:25px;
+}
+
+.collage-item{
+	width: 80px;
+	height: 100px;
+	position: relative;
+	}
+footer {
+	background-color: black;
+	color: white;
+	text-align: center;
+	padding: 15px;
+	font-family: calibri;
+	bottom: 0;
+	height: auto;
+	width: auto;
+	font-size:.6em;
+	}
+.fa {
+    padding: 5px; /* Baguhin ang padding para sa mas maliit na display */
+    font-size: 8px; /* Baguhin ang font size para sa mas maliit na display */
+    width: 20px; /* Baguhin ang lapad para sa mas maliit na display */
+}
+#scrollToTopBtn{
+	position: fixed;
+	bottom: 20px;
+	left: 20px;
+	right:20px;
+	width: 5%;
+    padding: 10px;
+	font-size: 10px;
+	cursor: pointer;
+	font-family: calibri;}
+}
