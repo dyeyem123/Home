@@ -380,8 +380,8 @@ figcaption {
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;		
-	height: auto;
-	width:200%;
+	height: 600px;
+	width:100%;
 	color:white;
 	display: flex;
 	text-align: center;
@@ -502,7 +502,7 @@ footer {
 	bottom: 20px;
 	left: 20px;
 	right:20px;
-	width: 5%;
+	width: 10%;
     padding: 10px;
 	font-size: 10px;
 	cursor: pointer;
