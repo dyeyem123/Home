@@ -392,6 +392,7 @@ figcaption {
 
 	#background-text{
 		font-size: .5em;
+		left: 50%;
 	}
 	#background-text a {
 		display:none;
