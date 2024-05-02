@@ -407,3 +407,240 @@ input[type="submit"]:active{
 input[type="submit"]:hover{
     border-color: #ff0000;
     }
+
+/*Selpon*/
+@media only screen and (max-width:414px){
+#background-image{
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;		
+	height: 600px;
+	width:100%;
+	color:white;
+	display: flex;
+	text-align: center;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	filter: brightness(50%);
+	}	
+#background-image {
+	position: relative;
+	}
+
+	#background-text{
+		font-size: .5em;
+	}
+	#background-text a {
+		display:none;
+	}
+	.open-menu-btn{
+	color: saddlebrown;
+	font-size: 1.9em;
+	cursor: pointer;
+	position: absolute;
+	top: 5px;
+	left: 15px;
+	}
+	.shopping-cart {
+	position: absolute;
+	top: 25px;
+	right: 30px;
+	transform: translateY(-50%);
+	font-size: 25px;
+	cursor: pointer;
+	}
+	#logo{
+	display: none;
+  }
+.navigation {
+	top:0;
+	font-size: 0px;
+  position: relative;
+}
+main {
+	display: flex;
+	justify-content: space-between;
+	padding: 20px;
+	flex-wrap: wrap;
+	}
+article {
+	font-size: 1.1em;
+	text-align: justify;
+	position: relative;
+	}
+section {	
+	font-size: 1.1em;
+	text-align: justify;
+	position: relative;
+	}  
+aside {
+	font-size: 1.1em;
+	text-align: justify;
+	position: relative;
+	}
+#Visit{
+	font-size: 1.1em;
+	}
+#ContactInformation{
+	font-size: 1.1em;
+	}
+.container {
+	display: none;
+}
+
+#h2 {
+	font-size:25px;
+}
+
+.collage-item{
+	max-width: 200px;
+	height: 150px;
+	position: relative;
+	}
+footer {
+	background-color: black;
+	color: white;
+	text-align: center;
+	padding: 15px;
+	font-family: calibri;
+	bottom: 0;
+	height: auto;
+	width: auto;
+	font-size:.6em;
+	}
+.fa {
+    padding: 5px; /* Baguhin ang padding para sa mas maliit na display */
+    font-size: 8px; /* Baguhin ang font size para sa mas maliit na display */
+    width: 20px; /* Baguhin ang lapad para sa mas maliit na display */
+}
+#scrollToTopBtn{
+	position: fixed;
+	bottom: 20px;
+	left: 20px;
+	right:20px;
+	width: 10%;
+    padding: 10px;
+	font-size: 10px;
+	cursor: pointer;
+	font-family: calibri;}
+/*Form*/
+
+#contact{
+    height:90vh;
+    text-align:right;
+    padding-top:40%; 
+    background-color: rgb(255, 255, 255, .1); 
+    margin-bottom:5rem;
+    padding:10px;
+    border-radius:10px;
+}
+#ContactInformation{
+	display:none;
+	
+}
+#ContactInformation ul li{
+	list-style: none;
+	font-size:.8em;
+}
+#contact h2{
+	margin-bottom: 5px;
+	color:#fff;
+	background-color: rgb(0, 0,0, .9);
+	padding:10px;
+	border-radius:5px;
+	text-align:center;
+	font-weight:800;
+	font-size:20px;
+	color:#fff;
+	margin-top:5rem;
+	box-shadow: 0 8px 16px rgb(0,0,0, .5);
+	position: relative;
+	right:40px;
+	margin-left:30px;
+	width: 80%;
+}
+form {
+	display: grid;
+	grid-gap: 10px;
+	width:70%;
+	padding:20px;
+	border: 3px solid black;
+	position: relative;
+	right:5px;
+}
+.inputbox{
+    position: relative;
+    width: 350px;
+    margin-top: 40px;
+	
+}
+.inputbox input{
+    position: relative;
+    width: 100%;
+    padding: 20px 10px 10px;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: black;
+    font-weight: 900;
+    font-size: 1.1em;
+    letter-spacing: 0.05em;
+    z-index: 10;
+	font-family: sans-serif;
+}
+.inputbox span{
+    position: absolute;
+    left: 0;
+    padding: 10px 0px 10px;
+    top:0px;
+    font-size: 1em;
+    color: #222;
+    pointer-events: none;
+    letter-spacing: 0.05em;
+    transition: 0.5s;
+    font-weight:900;
+}
+.inputbox input:valid ~ span,
+.inputbox input:focus ~ span{
+    color: saddlebrown;
+    transform: translateX(-0px) translateY(-34px);
+    font-size: 1em;
+}
+.inputbox i{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 80%;
+    height: 2px;
+    background: saddlebrown;
+    border-radius: 4px;
+    transition: 0.5s;
+    pointer-events: none;
+    z-index: 9;
+}
+.inputbox input:valid ~ i,
+.inputbox input:focus ~ i{
+    height: 44px;
+}
+input[type="submit"]{
+    border:0px solid #45f3ff;
+    outline: none;
+    background: transparent;
+    padding: 11px 25px 11px 25px;
+    width:100px;
+    margin-top: 10px;
+    border-radius: 9px;
+    font-weight: 900;
+    cursor:pointer;
+    margin-left: 150px;
+    color:white;
+    background-color:saddlebrown;
+}
+input[type="submit"]:active{
+    opacity: 0.8;
+}
+input[type="submit"]:hover{
+    border-color: #ff0000;
+    }
+}
