@@ -380,7 +380,7 @@ footer h2{
 .navigation {
 	top:0;
 	font-size: 0px;
- 	position: relative;
+  position: relative;
 }
 main {
 	display: flex;
