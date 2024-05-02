@@ -14,22 +14,33 @@
     <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon-16x16.png">
     <link rel="manifest" href="./manifest.json">
     <link rel="mask-icon" href="./img/safari-pinned-tab.svg" color="#666666">
-
+<script src="Javascript Files/Sidebar.js" defer></script>
     <link rel="stylesheet" href="CSS Files/VirtualCashier.css">
     <script src="Javascript Files/script.js" defer></script>
     <!-- uncomment the below script to convert to PWA -->
     <!-- <script src="Javascript Files/pwa.js" defer></script> -->
 </head>
 <body>
+<!-- Responsive Side Menu -->
+        <div class="open-menu-btn" onclick="openNav()">&#9776; </div>
+        <div id="mySidenav" class="sidenav">
+           <a href="javascript:void(0)" class="closebtn"  onclick="closeNav()">&times;</a>
+			<img src="Images/jmshop.png" alt="JM's Coffee Shop Logo" style="position:relative; left:80px; height:100px; width:100px;">
+            <a href="Home.html">HOME</a>
+            <a href="About.html">ABOUT</a>
+            <a href="Store.html">STORE</a>
+            <a href="Contact.html">CONTACT</a>
+            <a href="Log in Form.html">LOG-OUT</a>
+        </div>
 	<header>
 			<nav>
-				<ul>
+				<ul class="navigation">
 					<li><a href="Home.html" style="float: left; margin-left:20px;">HOME</a></li>   
 					<li><a href="Store.html" style="float: left; margin-left:20px;">STORE</a></li>
 					<li><a href="About.html" style="float: left; margin-left:20px;">ABOUT</a></li>
 					<li><a div style="text-align: left; margin-left:10px;"></a></li>
 					<img src="Images/Jm.png" alt="JM's Coffee Shop Logo" id="logo"></div>
-					<li><a href="LoginForm.html" style="float: right; margin-right:70px;">SIGN-IN</a></li>
+					<li><a href="Log in Form.html" style="float: right; margin-right:70px;">SIGN-IN</a></li>
 					<li><a href="Contact.html" style="float: right; margin-right:20px;">CONTACT</a></li>
 				</ul>
 			</nav>
