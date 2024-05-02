@@ -3,7 +3,64 @@
 	src: url('./font/DSDIGI.eot');
 	src: local('DSDIGI'), url('./font/DSDIGI.woff') format('woff'), url('./font/DSDIGI.ttf') format('truetype');
 }
-
+/*Side Menu Bar - Javascript*/		
+.sidenav {
+	height: 100%;
+	width: 0;
+	position: fixed;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	background-color: #737373;
+	overflow-x: hidden;
+	transition: 1.5s;
+	padding-top: 60px;
+	}
+.sidenav a {
+	padding: 8px 8px 8px 32px;
+	text-decoration: none;
+	font-size: 1em;
+	color: black;
+	display: block;
+	transition: .3s;
+	font-family:Segoe UI Black;
+	}
+.sidenav a:hover {
+	color: saddlebrown;
+	}
+.sidenav .closebtn {
+	position: absolute;
+	top: 0;
+	right: 25px;
+	font-size: 36px;
+	margin-left: 50px;
+	}
+@media screen and (max-height: 450px) {
+.sidenav {padding-top: 15px;}
+.sidenav a {font-size: 16px;}
+	}
+			/*Menu Bar Button - Javascript*/	
+.open-menu-btn{
+	color: saddlebrown;
+	font-size: 2em;
+	cursor: pointer;
+	position: absolute;
+	top: 10px;
+	left: 15px;
+	}
+			/*Shopping Cart Button - Javascript*/			
+.shopping-cart {
+	position: absolute;
+	top: 30px;
+	right: 30px;
+	transform: translateY(-50%);
+	font-size: 30px;
+	color:white;
+	cursor: pointer;
+	}	
+.shopping-cart a{
+	text-decoration:none;
+	}
 * {
     margin: 0;
     padding: 0;
