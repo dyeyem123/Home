@@ -610,4 +610,7 @@ nav ul li a {
 	.shopping-cart{
 		display:none;
 	}
+	#logo{
+	display: none;
+  }
 }
