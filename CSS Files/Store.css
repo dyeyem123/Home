@@ -1,532 +1,71 @@
-body {
-	font-family: Tahoma, sans-serif;
-	margin: 0;
-	padding: 0;
-	background-color: #ebebe0;
-	}
+body{
+	display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #EFC3A4;
+    font-family: Arial;
+    font-size: 100%;
+    }
 #background-image{
-	background-size: cover;
-	background-position: center;
-	background-repeat: no-repeat;		
-	height: 110vh;
-	width:100%;
-	color:white;
-	display: flex;
-	text-align: center;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-	filter: brightness(50%);
-	}	
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;   
+    height: 110vh;
+    width:100%;
+    color:white;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    filter: brightness(50%);
+    } 
 #background-image {
-	position: relative;
-	}
-#background-text h2 {
-	position: absolute;
-  	top: 60%;
-   	left: 50%;
-   	transform: translate(-50%, -50%);
-  	color: white;
-   	font-size: 4em;
-   	text-align: center;
-	font-family: Imprint MT Shadow;
-	}
-			/*Side Menu Bar - Javascript*/		
-.sidenav {
-	height: 100%;
-	width: 0;
-	position: fixed;
-	z-index: 1;
-	top: 0;
-	left: 0;
-	background-color: #737373;
-	overflow-x: hidden;
-	transition: 1.5s;
-	padding-top: 60px;
-	}
-.sidenav a {
-	padding: 8px 8px 8px 32px;
-	text-decoration: none;
-	font-size: 1em;
+    position: fixed;
+    }
+form {
+    width: 300px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #efe7dd;
+    position: absolute;
+    }
+label {
+    display: block;
+    margin-bottom: 8px;
+    }
+input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    }
+input[type="submit"]{
+    background-color: #c68c53;
+    color: black;
+    cursor: pointer;
+	font-size:1em;
+	font-weight: 900;
+    }
+input[type="button"]{
+    background-color: #c68c53;
 	color: black;
-	display: block;
-	transition: .3s;
-	font-family:Segoe UI Black;
-	}
-.sidenav a:hover {
+    cursor: pointer;
+	font-size:1em;
+	font-weight: 900;
+    }
+input[class="inputbox"]{
 	color: saddlebrown;
-	}
-.sidenav .closebtn {
-	position: absolute;
-	top: 0;
-	right: 25px;
-	font-size: 36px;
-	margin-left: 50px;
-	}
-@media screen and (max-height: 450px) {
-.sidenav {padding-top: 15px;}
-.sidenav a {font-size: 16px;}
-	}
-			/*Menu Bar Button - Javascript*/	
-.open-menu-btn{
-	color: saddlebrown;
-	font-size: 2em;
-	cursor: pointer;
-	position: absolute;
+	font-size:1.5em;
+	font-weight: 900;
+    }
+#Logo{
+    height: 150px;
+    width: 200px;
+    position: relative; 
 	top: 10px;
-	left: 15px;
-	}
-			/*Menu Bar Button - Javascript*/	
-.open-menu-btn{
-	color: saddlebrown;
-	font-size: 2em;
-	cursor: pointer;
-	position: absolute;
-	top: 10px;
-	left: 15px;
-	}
-			/*Shopping Cart Button - Javascript*/			
-.shopping-cart {
-	position: absolute;
-	top: 30px;
-	right: 30px;
-	transform: translateY(-50%);
-	font-size: 30px;
-	color:white;
-	cursor: pointer;
-	}	
-.shopping-cart a{
-	text-decoration:none;
-	}			
-header {
-	background-color: #efe7dd;
-	color: black;
-	padding: 5px;
-	text-align: center;
-	font-size: 1em;
-	}
-nav ul {
-	list-style: none;
-	padding: 10px;
-	margin: 10px;
-	}
-nav ul li {
-	display: inline;
-	margin-right: 50px;
-	}
-nav ul li a {
-	color: saddlebrown;
-	text-decoration: none;
-	font-weight: bold;
-	}
-main {
-	display: flex;
-	justify-content: space-between;
-	padding: 20px;
-	flex-wrap: wrap;
-	}
-#menu {
-	display: flex;
-	justify-content: space-between;
-	padding: 20px;
-	flex-wrap: wrap;
-	width:97%;
-	position:relative;
-}
-article {
-	flex: 1;
-	margin: 0 10px;
-	padding: 20px;
-	border: 3px solid black;
-	border-radius: 10px;
-	background-color: #c68c53;
-	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-	margin-bottom: 20px;
-	font-size: 1.5em;
-	text-align: justify;
-	position: relative;
-	}
-section {
-	flex: 1;
-	margin: 0 10px;
-	padding: 20px;
-	border: 3px solid saddlebrown;
-	border-radius: 10px;
-	background-color: white;
-	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-	margin-bottom: 20px;	
-	font-size: 1.5em;
-	text-align: justify;
-	position: relative;
-	}  
-aside {
-	flex: 1;
-	margin: 0 10px;
-	padding: 20px;
-	border: 3px solid black;
-	border-radius: 10px;
-	background-color: #c68c53;
-	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-	margin-bottom: 20px;
-	font-size: 1.5em;
-	text-align: justify;
-	position: relative;
-	}
-			/*My Footer*/
-footer {
-	background-color: black;
-	color: white;
-	text-align: center;
-	padding: 15px;
-	font-family: calibri;
-	bottom: 0;
-	} 
-footer div{
-	flex: 1;
-	margin-right: 20px;
-	text-align: center;
-	}
-footer ul{
-	list-style: none; /*para mawala ang dot sa list*/
-	}
-footer ul li{
-	display: outline;
-	margin-right: 10px;
-	color: white;
-	font-family: calibri;
-	}
-footer ul li a{
-	text-decoration: none;/*para mawala ang underline sa link*/
-	color: white;
-	font-family: calibri;
-	display: outline;
-	}
-footer h2{
-	color: saddlebrown;
-	font-family: calibri;
-	text-align: center;
-	}
-#logo {
-	max-width: 120px;
-	position: absolute;
-	top: -20px;
-	left: 680px;
-	}
-
-#mySidenav img{
-    width:70px;
-    position:absolute;
-    align-items:right;
-    border-radius:50%;
-    z-index:100;
-    transition: transform 1s ease-in-out;
-}
-
-#mySidenav img:hover{
-    transform: rotate(720deg);
-}
-
-#Craft-roasted{
-	background-color: lightgray;
-	color: black;
-	padding: 49px;
-	text-align: center;
-	font-size: 2em;
-	color: black;
-	text-align: center;
-	}
-#scrollToTopBtn{
-	position: fixed;
-	bottom: 20px;
-	right: 20px;
-	font-size: 30px;
-	cursor: pointer;
-	font-family: calibri;}
-
-/* Style all font awesome icons */
-.fa {
-	padding: 20px;
-	font-size: 30px;
-	width: 50px;
-	text-align: center;
-	text-decoration: none;
-	}
-/* Add a hover effect if you want */
-.fa:hover {
-	opacity: 0.7;
-	}
-/* Set a specific color for each brand */
-/* Facebook */
-.fa-facebook {
-	background: #3B5998;
-	color: white;
-	}
-/* Twitter */
-.fa-twitter {
-	background: #55ACEE;
-	color: white;
-	}
-/* YouTube */
-.fa-youtube {
-	background: red;
-	color: white;
-	}
-/* Instagram */
-.fa-instagram {
-	background: yellow;
-	color: white;
-	}
-/* Pinteres */
-.fa-pinterest {
-	background: red;
-	color: white;
-	}
-/* Google */
-.fa-google {
-	background: blue;
-	color: white;
-	}
-/*Product*/
-
-
-.product:hover {
-  transform: scale(1.05);
-}
-.product img {
-  height: auto;
-  width:100%;
-  border-radius:15px;
-  object-fit: cover;
-  margin-bottom: 50px;
-}
-/*Button of Order Now*/
-.product button {
-  display: block;
-  width: 100%;
-  color: saddlebrown;
-  border: none;
-  cursor: pointer;
-  padding: 10px;
-  font-size: 16px;
-  border-radius:15px;
-  background-color: lightgray;
-}
-/*symbol of Pesos*/
-.product p {
-  font-size: 2em;
-  margin-bottom: 10px;
-  text-align:center;
-}
-
-/*menu*/
-figure {
-	text-align: center;
-	}
-figcaption {
-	margin-top: 10px;
-	font-weight: bold;
-	font-size:30px;
-	}
-#espresso{
-	width: 350px;
-	height: 350px;
-	position: relative;
-	top: -10px;
-	right: -20px;
-	}
-#cappuccino{
-	width: 350px;
-	height: 350px;
-	position: relative;
-	top: -10px;
-	right: -10px;	
-	}
-#latte{
-	width: 350px;
-	height: 350px;
-	position: relative;
-	top: -10px;
-	left: -10px;
-	} 
-#americano{
-	width: 350px;
-	height: 350px;
-	position: relative;
-	top: -10px;
-	right: -20px;
-	} 
-#dopio{
-	width: 350px;
-	height: 350px;
-	position: relative;
-	top: -10px;
-	right: -10px;	
-	}
-#cortado{
-	width: 350px;
-	height: 350px;
-	position: relative;
-	top: -10px;
-	left: -10px;
-	} 
-
-/*Selpon*/
-@media only screen and (max-width:414px){
-#background-image{
-	background-size: cover;
-	background-position: center;
-	background-repeat: no-repeat;		
-	height: 600px;
-	width:100%;
-	color:white;
-	display: flex;
-	text-align: center;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-	filter: brightness(50%);
-	}	
-#background-image {
-	position: relative;
-	}
-
-	#background-text{
-		font-size: 2.5em;
-		left: 50%;
-		top: 50%;
-	}
-	#background-text a {
-		display:none;
-	}
-	.open-menu-btn{
-	color: saddlebrown;
-	font-size: 1.9em;
-	cursor: pointer;
-	position: absolute;
-	top: 5px;
-	left: 15px;
-	}
-	.shopping-cart {
-	position: absolute;
-	top: 25px;
-	right: 30px;
-	transform: translateY(-50%);
-	font-size: 25px;
-	cursor: pointer;
-	}
-	#logo{
-	display: none;
-  }
-.navigation {
-	top:0;
-	font-size: 0px;
-  position: relative;
-}
-main {
-	display: flex;
-	justify-content: space-between;
-	padding: 20px;
-	flex-wrap: wrap;
-	}
-article {
-	font-size: 1.1em;
-	text-align: justify;
-	position: relative;
-	}
-section {	
-	font-size: 1.1em;
-	text-align: justify;
-	position: relative;
-	}  
-aside {
-	font-size: 1.1em;
-	text-align: justify;
-	position: relative;
-	}
-#Craft-roasted{
-	font-size: 1.1em;
-	}
-.container {
-	display: none;
-}
-	.video {
-		display:none;
-	}
-#h2 {
-	font-size:25px;
-}
-
-.collage-item{
-	max-width: 200px;
-	height: 150px;
-	position: relative;
-	}
-footer {
-	background-color: black;
-	color: white;
-	text-align: center;
-	padding: 15px;
-	font-family: calibri;
-	bottom: 0;
-	height: auto;
-	width: auto;
-	font-size:.6em;
-	}
-.fa {
-    padding: 5px; /* Baguhin ang padding para sa mas maliit na display */
-    font-size: 8px; /* Baguhin ang font size para sa mas maliit na display */
-    width: 20px; /* Baguhin ang lapad para sa mas maliit na display */
-}
-#scrollToTopBtn{
-	position: fixed;
-	bottom: 20px;
-	left: 20px;
-	right:20px;
-	width: 10%;
-    padding: 10px;
-	font-size: 10px;
-	cursor: pointer;
-	font-family: calibri;}
-	#espresso{
-	width: 200px;
-	height: 200px;
-	position: relative;
-	top: -10px;
-	right: 10px;
-	}
-#cappuccino{
-	width: 200px;
-	height: 200px;
-	position: relative;
-	top: -10px;
-	right: 20px;	
-	}
-#latte{
-	width: 200px;
-	height: 200px;
-	position: relative;
-	top: -10px;
-	left: 10px;
-	} 
-#americano{
-	width: 200px;
-	height: 200px;
-	position: relative;
-	top: -10px;
-	right: 20px;
-	} 
-#dopio{
-	width: 200px;
-	height: 200px;
-	position: relative;
-	top: -10px;
-	right: -20px;	
-	}
-#cortado{
-	width: 200px;
-	height: 200px;
-	position: relative;
-	top: -10px;
-	left: -10px;
-	} 
-}
+    left: 50px;}
+    }
