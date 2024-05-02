@@ -550,4 +550,7 @@ nav ul li a {
 	top: 5px;
 	left: 15px;
 	}
+	.shopping-cart{
+		display:none;
+	}
 }
